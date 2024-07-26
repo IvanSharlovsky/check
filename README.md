@@ -1,25 +1,21 @@
-# Test_tasks
-## Test tasks from MCST Elbrus internship
+# test assignment
+## test assignment from MCST Elbrus internship
 
 ### 1  
 Complete vimtutor
 
 ### 2.1  
-Написать bash-скрипт, выводящий на экран текущее дерево каталогов в файловой системе, начиная с "/" с глубиной поиска "1" - то есть вывести только те каталоги, которые находятся в корне файловой системы.
+Write a bash script that displays the current directory tree in the file system, starting from "/" with a search depth of "1" — that is, only show the directories that are in the root of the file system.
 ### 2.2  
-Написать bash-скрипт, выполняющий поиск в каталоге /usr/lib всех файлов, содержащих буквы qt в названии и вывести пути с именами этих файлов на экран.
+Write a bash script that searches the /usr/lib directory for all files containing the letters "qt" in their names and outputs the paths and names of these files to the screen.
 ### 2.3  
-Написать скрипт, записывающий в переменную текущую дату при помощи команды "date", затем удалить из ее вывода, хранящегося в переменной, все двоеточия, после чего вывести получившуюся переменную на экран.
+Write a script that stores the current date in a variable using the "date" command, then removes all colons from its output stored in the variable, and finally displays the resulting variable on the screen.
 ### 2.4  
-Написать скрипт, который выводит второй столбец из списка всех установленных в системе пакетов (например, используя утилиту "dpkg" для Debian-подобных системы, либо другую утилиту при отсутствии "dpkg"). Столбец выводить при помощи "awk".
+Write a script that outputs the second column from the list of all installed packages in the system (for example, using the "dpkg" utility for Debian-based systems or another utility if "dpkg" is not available). Output the column using "awk".
 ### 2.5  
-Написать скрипт, объединяющий в себе содержимое предыдущих 4 скриптов, оформив их как функции.
+Write a script that combines the contents of the previous four scripts, organizing them as functions.
 
-### 3 
-Написать программу на языке Си, состоящую из двух *.c файлов - в одном из них находится функция main(), в другом - функция обработки файла.
-Также должен присутствовать заголовочный файл .h, в котором содержится протип функции обработки файла, подключаемый к файлу, содержащему main().
-Компиляция производится при помощи Makefile, содержащего в себе цели "all" и "clean".
-Алгоритм работы программы следующий:
-Программе на вход в качестве подается текстовый файл, содержащий в себе строки текста - стихотворение В. Маяковского или И. Бродского на английском языке.
-Программа записывает файл построчно в двусвязный список - структуру linked list. В структуре должны быть поля, в которых содержится: номер текущей строки, содержание текущей строки, указатель на предыдущую и следующую структуры.
-После заполнения списка структур их необходимо вывести на экран.
+### 3  
+Write a program in C consisting of two *.c files - one of them contains the main() function, and the other contains the file processing function. There should also be a header file .h that contains the prototype of the file processing function, which is included in the file containing main(). Compilation is done using a Makefile that includes the targets "all" and "clean". 
+
+The program works as follows: The program takes a text file as input, which contains lines of text - a poem by V. Mayakovsky or I. Brodsky in English. The program writes the file line by line into a doubly linked list structure. The structure should have fields that contain: the number of the current line, the content of the current line, and pointers to the previous and next structures. After filling the list with structures, they need to be displayed on the screen.
